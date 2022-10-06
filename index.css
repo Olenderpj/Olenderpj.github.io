@@ -1,0 +1,30 @@
+@import url("global.css");
+
+*{
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+
+}
+
+
+
+.shape {
+    align-items: center;
+    display: flex;
+    width: 100vw;
+    background-color: mediumpurple;
+}
+
+.shape > .text {
+    margin: 15px;
+    font-size: xxx-large;
+    text-align: center;
+    color: white;
+
+}
+
+
+
