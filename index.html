@@ -1,20 +1,122 @@
 <!DOCTYPE html>
 
 <head>
-    <link rel="stylesheet" href="index.css" >
+    <meta charset="UTF-8"/>
+
+    <title> Patrick Olender </title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
-<nav>
-    <div class="navBar">
-        <li><a href="aboutMe.html">About Me </a></li>
-        <li><a href="contact.html">Contact </a></li>
-        <li><a href="resume.html">Resume </a></li>
-        <li><a href="projects.html">Projects </a></li>
-    </div>
-</nav>
-
 <body>
-    <div class="shape">
-        <div class="text">Hello.</div>
+    <header class="hero">
+
+        <nav class="site-header-nav">
+            <ul class="site-header-nav__list">
+                <li class="nav-item">
+                    <a class="nav-item-button">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item-button">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item-button" href="#resume" >Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item-button">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div class="container">
+            <div class="hero-title-container">
+                <h1 class="hero-title">PATRICK J. OLENDER Software Engineer </h1>
+                <p class="hero-title" data-overlay aria-hidden="true"></p>
+            </div>
+        </div>
+
+        <!--Color changing overlay -->
+        <div class="canvas-container">
+            <canvas id="canv" width="32" height="32">
+        </div>
+
+
+
+
+    </header>
+
+    <div class="project-container">
+        <ul class="project_table">
+
+            <li class="project-card-item">
+                <div class="image-container">
+                    <img class="card-image" src="https://cdn.pixabay.com/photo/2019/09/29/22/06/light-bulb-4514505__340.jpg" alt="Italian Trulli" size="auto">
+                </div>
+                <p class="project-title">Card Title</p>
+                <p class="project-description">This is some text that has been styled for the card body...</p>
+            </li>
+
+            <li class="project-card-item">
+                <div class="image-container">
+                    <img class="card-image" src="https://cdn.pixabay.com/photo/2019/09/29/22/06/light-bulb-4514505__340.jpg" alt="Italian Trulli" size="auto">
+                </div>
+                <p class="project-title">Card Title</p>
+                <p class="project-description">This is some text that has been styled for the card body...</p>
+            </li>
+
+            <li class="project-card-item">
+                <div class="image-container">
+                    <img class="card-image" src="https://cdn.pixabay.com/photo/2019/09/29/22/06/light-bulb-4514505__340.jpg" alt="Italian Trulli" size="auto">
+                </div>
+                <p class="project-title">Card Title</p>
+                <p class="project-description">This is some text that has been styled for the card body...</p>
+            </li>
+
+            <li class="project-card-item">
+                <div class="image-container">
+                    <img class="card-image" src="https://cdn.pixabay.com/photo/2019/09/29/22/06/light-bulb-4514505__340.jpg" alt="Italian Trulli" size="auto">
+                </div>
+                <p class="project-title">Card Title</p>
+                <p class="project-description">This is some text that has been styled for the card body...</p>
+            </li>
+
+            <li class="project-card-item">
+                <div class="image-container">
+                    <img class="card-image" src="https://cdn.pixabay.com/photo/2019/09/29/22/06/light-bulb-4514505__340.jpg" alt="Italian Trulli" size="auto">
+                </div>
+                <p class="project-title">Card Title</p>
+                <p class="project-description">This is some text that has been styled for the card body...</p>
+            </li>
+
+            <li class="project-card-item">
+                <div class="image-container">
+                    <img class="card-image" src="https://cdn.pixabay.com/photo/2019/09/29/22/06/light-bulb-4514505__340.jpg" alt="Italian Trulli" size="auto">
+                </div>
+                <p class="project-title">Card Title</p>
+                <p class="project-description">This is some text that has been styled for the card body...</p>
+            </li>
+
+        </ul>
+
     </div>
+
+    <div class="skills-container" id="skills">
+
+    </div>
+
+    <div class="resume-container" id="Resume">
+
+    </div>
+
+
+
+    <script type="module" src="/main.js"></script>
 </body>
+
+<footer>
+    <div class="attribution-container">
+        <p class="attributions">This site draws inspiration from www.stripe.com</p>
+    </div>
+
+</footer>
