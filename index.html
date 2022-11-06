@@ -9,23 +9,26 @@
 </head>
 
 <body>
-    <header class="hero">
+    <header class="hero" id="home">
         <nav class="site-header-nav">
             <ul class="site-header-nav__list">
                 <li class="nav-item">
-                    <a class="nav-item-button">Projects</a>
+                    <a class="nav-item-button" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-item-button">Research</a>
+                    <a class="nav-item-button" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item-button" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item-button" href="#experience">Experience</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-item-button" href="#resume" >Resume</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-item-button">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-item-button">Contact</a>
+                    <a class="nav-item-button" href="#contact">Contact</a>
                 </li>
             </ul>
 
@@ -54,32 +57,8 @@
 
     </header>
 
-    <div class="project-container">
+    <div class="project-container" id="projects">
         <ul class="project_table">
-
-            <li class="project-card-item">
-                <div class="image-container">
-                    <img class="card-image" src="https://picsum.photos/500/300" alt="Project Image" size="auto">
-                </div>
-                <p class="project-title">Card Title</p>
-                <p class="project-description">This is some text that has been styled for the card body...</p>
-            </li>
-
-            <li class="project-card-item">
-                <div class="image-container">
-                    <img class="card-image" src="https://picsum.photos/500/300" alt="Project Image" size="auto">
-                </div>
-                <p class="project-title">Card Title</p>
-                <p class="project-description">This is some text that has been styled for the card body...</p>
-            </li>
-
-            <li class="project-card-item">
-                <div class="image-container">
-                    <img class="card-image" src="https://picsum.photos/500/300" alt="Project Image" size="auto">
-                </div>
-                <p class="project-title">Card Title</p>
-                <p class="project-description">This is some text that has been styled for the card body...</p>
-            </li>
 
             <li class="project-card-item">
                 <div class="image-container">
@@ -212,19 +191,19 @@
 
     </div>
 
-    <div class="canvas-container-skills">
+    <div class="canvas-container-skills" id="skills">
         <canvas id="skills-canv" width="32" height="32"></canvas>
     </div>
 
     <!---Skills stuff ends here--->
 
-    <div class="education-container">
+    <div class="education-container" id="education">
         <p class="education-heading">Education</p>
         <hr>
 
         <div class="education-details">
-            <p class="bold">University of Colorado - Colorado Springs</p>
-            <p class="bold">05/2022 - Present</p>
+            <p class="bold large-font no-margin">University of Colorado - Colorado Springs</p>
+            <p class="bold no-margin">08/2019 - Present</p>
         </div>
 
         <div class="education-details">
@@ -232,47 +211,98 @@
             <p>GPA: 3.771 / 4.000</p>
         </div>
 
+        <div class="relevant-coursework-container">
+            <p class="bold large-font">Relevant Coursework</p>
 
-
-
-    </div>
-
-    <div class="work-container">
-        <p class="work-heading">Work Experience</p>
-        <div class="work-sub-heading">
-
-        </div>
-
-        <div class="work-content">
-
-            <p class="work-description">Developed mission-critical software to handle real-time satellite and missile
-                data. Worked with Government representatives to build requirements and process and fix bugs found in
-                existing software version releases.
-            </p>
-
-            <ul>
-                <li><p>Created software features following contractual design specifications.</p></li>
-                <li><p>Integrated software patch files using Git to create new baseline version releases that were deployed to customers.</p></li>
-                <li><p>Resolved mission critical bugs found in software baseline versions on an accelerated timeline.</p></li>
-                <li><p>Generated professional documentation to reflect software changes.</p></li>
-            </ul>
-
+            <div class="relevant-coursework-details">
+                <p>| PLACEHOLDER FOR RELEVANT LIST OF COURSES |</p>
+            </div>
         </div>
     </div>
 
+    <!--- Work Experience --->
+    <div class="work-experience-canvas" id="experience">
+        <div class="work-container">
+            <p class="work-heading">Work Experience</p>
+            <p class="work-sub-heading"> Northrop Grumman</p>
+            <hr>
+            <div class="work-content">
+                <p class="work-description">Developed mission-critical software to handle real-time satellite and missile
+                    data. Worked with Government representatives to build requirements and process and fix bugs found in
+                    existing software version releases.
+                </p>
 
-    <div class="resume-container" id="Resume">
+                <ul class="work-data-point-list">
+                    <li class="work-data-point"><p>Created software features following contractual design specifications.</p></li>
+                    <li class="work-data-point"><p>Integrated software patch files using Git to create new baseline
+                        version releases that were deployed to customers.</p></li>
+                    <li class="work-data-point"><p>Resolved mission critical bugs found in software baseline versions on
+                        an accelerated timeline.</p></li>
+                    <li class="work-data-point"><p>Generated professional documentation to reflect software changes.</p></li>
+                </ul>
+
+            </div>
+
+            <p class="work-sub-heading"> University of Colorado</p>
+            <hr>
+            <div class="work-content">
+                <p class="work-description">Mentored Students on software engineering topics and assisted in developing
+                    lesson plans and assignments to better suit all learning styles.
+                </p>
+
+                <ul class="work-data-point-list">
+                    <li class="work-data-point"><p>Developed ARM and x86 Docker container environments for a more
+                        consistent student workspace.</p></li>
+                    <li class="work-data-point"><p>Performed lectures and demonstrations on software version control
+                        (Git, GitHub) and current industry development methodologies.</p></li>
+                    <li class="work-data-point"><p>Designed more effective learning material and assignments using the
+                        Ruby on Rails web framework.</p></li>
+                </ul>
+
+            </div>
+
+            <p class="work-sub-heading"> Backcountry.com</p>
+            <hr>
+            <div class="work-content">
+                <p class="work-description">Member of a small international agile team in a fast-paced development
+                    pipeline assisting in the modernization and efficiency enhancement of backend APIs for a large-scale
+                    e-commerce platform.
+                </p>
+
+                <ul class="work-data-point-list">
+                    <li class="work-data-point"><p>Created software features following contractual design specifications.</p></li>
+                    <li class="work-data-point"><p>Integrated software patch files using Git to create new baseline version releases that were deployed to customers.</p></li>
+                    <li class="work-data-point"><p>Resolved mission critical bugs found in software baseline versions on an accelerated timeline.</p></li>
+                    <li class="work-data-point"><p>Generated professional documentation to reflect software changes.</p></li>
+                </ul>
+
+            </div>
+
+            <div class="employer-logo-list">
+                <img class="employer-logo" src="NorthropGrumman.png" alt="Employer Image" >
+                <img class="employer-logo" src="Backcountry.webp" alt="Employer Image" size="auto">
+                <img class="employer-logo" src="university-of-colorado.png" alt="Employer Image" size="auto">
+            </div>
 
     </div>
+        <canvas id="work-exp-canv" width="32" height="32"></canvas>
+    </div>
 
+    <div class="contact-container" id="contact">
+        <p> CONTACT INFORMATION HERE</p>
+    </div>
 
+    <div class="resume-container" id="resume">
+        <p> RESUME INFORMATION HERE</p>
+    </div>
 
     <script type="module" src="/main.js"></script>
 </body>
 
 <footer>
     <div class="attribution-container">
-        <p class="attributions">This site draws inspiration from www.stripe.com</p>
+            <p class="attributions">This portfolio was inspired by the  www.stripe.com</p>
+            <a class="attributions" href="#home">Back to Top</a>
     </div>
 
 </footer>
