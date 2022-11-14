@@ -2,21 +2,20 @@
     display: flex;
     justify-content: center;
     font-family: Arial, serif;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
 
     /*variables*/
     --borderColor: red;
     --borderWidth: 1px;
 
-    --minBodyWidth: 60vw;
+    --minBodyWidth: 80vw;
     --cardTextPadding: 1rem;
 }
 
-
 body {
     flex-direction: column;
-}
-
-footer {
 }
 
 .navigation {
@@ -29,8 +28,21 @@ footer {
     padding: 1rem;
 }
 
-.projects {
-    min-height: 100vh;
+.name, .title {
+    font-size: xx-large;
+}
+
+.name {
+    justify-content: left;
+}
+
+.title {
+    justify-content: left;
+}
+
+.heading {
+    justify-content: left;
+    font-size: xx-large;
 }
 
 .project-table {
@@ -38,17 +50,14 @@ footer {
 }
 
 .card {
-    background-color: #000;
     flex-direction: column;
     min-height: 8rem;
     max-height: 16rem;
     min-width: 24rem;
     max-width: 48rem;
-    border-radius: 10px;
-
-    margin: 1rem;
-    border: var(--borderWidth) solid var(--borderColor);
+    border: 1px solid black;
 }
+
 .card-image {
     max-height: 500px;
     max-width: 900px;
@@ -60,16 +69,57 @@ footer {
 
 .card-title {
     justify-content: left;
-    color: white;
-    margin: 0;
     padding: var(--cardTextPadding);
+
 }
 
 .card-description {
-    margin: 0;
     padding: var(--cardTextPadding);
     padding-top: 0;
     max-width: 65ch;
-    color: white;
 
+}
+
+.education {
+    width: inherit;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.education-content {
+    display: block;
+    flex-direction: column;
+}
+
+.school-title {
+    display: block;
+}
+
+.degree-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.coursework-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.relevant-coursework {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.course {
+    display: block;
+    padding-left: 1rem;
 }
