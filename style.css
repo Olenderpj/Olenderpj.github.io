@@ -4,18 +4,24 @@
     font-family: Arial, serif;
     padding: 0;
     margin: 0;
-    background-color: transparent;
 
     /*variables*/
     --borderColor: red;
     --borderWidth: 1px;
 
-    --minBodyWidth: 80vw;
+    --minBodyWidth: 75vw;
     --cardTextPadding: 1rem;
 }
 
 body {
     flex-direction: column;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+footer {
+    justify-content: center;
+    align-content: center;
 }
 
 .navigation {
@@ -25,7 +31,6 @@ body {
 
 .nav-element {
     display: block;
-    padding: 1rem;
 }
 
 .name, .title {
@@ -122,4 +127,66 @@ body {
 .course {
     display: block;
     padding-left: 1rem;
+}
+
+.horizontal-rule {
+    position: absolute;
+    max-width: var(--minBodyWidth);
+    border: lightgrey solid 1px;
+    opacity: 70%;
+    height: 200vh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+/*--------------------*/
+.experience {
+    width: inherit;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.experience-content {
+    display: block;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.experience-company {
+    display: block;
+    font-size: x-large;
+}
+
+.experience-title-time {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.experience-data {
+    justify-content: left;
+    font-size: large;
+}
+
+.experience-small-description {
+    max-width: 85ch;
+}
+
+
+.contact {
+    display: flex;
+    justify-content: left;
+    max-width: var(--minBodyWidth);
+
+}
+
+.rule1 {
+    display: flex;
+    position: absolute;
+    margin-left: calc(var(--minBodyWidth) / 2);
+}
+
+.rule2 {
+    margin-left: var(--minBodyWidth);
 }
