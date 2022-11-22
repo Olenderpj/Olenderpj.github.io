@@ -1,18 +1,21 @@
 *, root {
     display: flex;
     justify-content: center;
-    font-family: Arial, serif;
+    font-family: system-ui;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
 
     /*variables*/
-    --borderColor: red;
     --borderWidth: 1px;
 
     --minBodyWidth: 75vw;
+    --halfBodyWidth: calc(var(--minBodyWidth) / 2);
+    --thirdBodyWidth: calc(var(--minBodyWidth) / 3);
+    --quarterBodyWidth: calc(var(--minBodyWidth) / 4);
     --cardTextPadding: 1rem;
 }
+
 
 
 
@@ -28,12 +31,15 @@ footer {
 }
 
 .navigation {
-    min-width: var(--minBodyWidth);
+    display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .nav-element {
-    display: block;
+    justify-content: space-evenly;
+    min-width: 3rem;
+    padding: 2rem;
 }
 
 .name, .title {
@@ -44,17 +50,43 @@ footer {
     justify-content: left;
 }
 
+.name-title-heading {
+    position: fixed;
+}
+
+.hero {
+    z-index: 1;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.hero-canvas {
+    width: 100%;
+    height: 100%;
+}
+
 .title {
     justify-content: left;
 }
+
+/*----------------------------------------------------------------------------------------*/
 
 .heading {
     justify-content: left;
     font-size: xx-large;
 }
 
+.projects {
+    display: flex;
+    justify-content: left;
+    margin: 0;
+    padding: 0;
+}
+
 .project-table {
     flex-wrap: wrap;
+    justify-content: left;
 }
 
 .card {
@@ -62,19 +94,21 @@ footer {
     flex-direction: column;
     min-height: 8rem;
     max-height: 16rem;
-    min-width: 24rem;
-    max-width: 48rem;
+    min-width: 15rem;
+    width: var(--halfBodyWidth);
+    /*min-width: 24rem;
+    max-width: 48rem;*/
     border: 1px solid black;
     border-radius: var(--card-border-radius);
 }
 
 .card-image {
-    max-height: 500px;
-    max-width: 900px;
+    max-height: 600px;
+    min-width: 15rem;
+    max-width: var(--halfBodyWidth);
     justify-content: center;
     align-content: center;
     overflow: clip;
-
 }
 
 .card-title {
@@ -86,9 +120,59 @@ footer {
 .card-description {
     padding: var(--cardTextPadding);
     padding-top: 0;
-    max-width: 65ch;
+    max-width: var(--minBodyWidth);
 
 }
+
+/*----------------------------------------------------------------------------------------*/
+
+.skills-heading {
+    display: flex;
+    justify-content: left;
+    width: var(--minBodyWidth);
+    font-size: x-large;
+}
+
+.skills-container {
+    --minGroupWidth: calc(var(--minBodyWidth) / 4);
+    --min2sectionWidth: calc(var(--minBodyWidth) / 4);
+    --defaultSkillPadding: 1rem;
+    display: flex;
+    width: var(--minBodyWidth);
+    margin: 0;
+}
+
+.skill-groups-list {
+    display: inherit;
+    flex-wrap: wrap;
+    justify-content: left;
+    min-width: 15rem;
+
+}
+
+.skill-group {
+    display: block;
+    width: var(--thirdBodyWidth);
+
+}
+
+.skill-heading {
+    display: inherit;
+    font-size: large;
+    padding-left: 1rem;
+
+}
+
+.skills-list {
+    display: inherit;
+}
+
+.skill {
+    display: inherit;
+    padding-left: 2rem;
+}
+
+/*----------------------------------------------------------------------------------------*/
 
 .education {
     width: inherit;
@@ -134,28 +218,16 @@ footer {
     padding-left: 1rem;
 }
 
+/*----------------------------------------------------------------------------------------*/
+
 .horizontal-rule {
     position: absolute;
     max-width: var(--minBodyWidth);
     border: lightgrey solid 1px;
     opacity: 70%;
-    height: 200vh;
-    z-index: -1;
+    height: 1000vh;
+    z-index: -100;
     overflow: hidden;
-}
-
-.education-background {
-    position: absolute;
-    margin-left: -50rem;
-    padding: 0;
-
-}
-
-.education-canvas {
-    z-index: -2;
-    background-color: darkblue;
-    width: 1000vw;
-    max-height: 500px;
 }
 
 /*----------------------------------------------------------------------------------------*/
@@ -202,10 +274,11 @@ footer {
 
 .rule1 {
     display: flex;
-    position: absolute;
+    position: fixed;
     margin-left: calc(var(--minBodyWidth) / 2);
 }
 
 .rule2 {
+
     margin-left: var(--minBodyWidth);
 }

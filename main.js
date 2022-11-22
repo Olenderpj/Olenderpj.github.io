@@ -27,8 +27,6 @@ var B = function(x, y, t) {
     return( Math.floor(192 + 64*Math.sin( 5*Math.sin(t/9) + ((x-100)*(x-100)+(y-100)*(y-100))/1100) ));
 }
 
-
-
 var t = 0;
 var x;
 var y;
