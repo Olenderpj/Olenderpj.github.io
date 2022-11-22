@@ -4,6 +4,7 @@
     font-family: Arial, serif;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 
     /*variables*/
     --borderColor: red;
@@ -12,6 +13,8 @@
     --minBodyWidth: 75vw;
     --cardTextPadding: 1rem;
 }
+
+
 
 body {
     flex-direction: column;
@@ -55,12 +58,14 @@ footer {
 }
 
 .card {
+    --card-border-radius: 12px;
     flex-direction: column;
     min-height: 8rem;
     max-height: 16rem;
     min-width: 24rem;
     max-width: 48rem;
     border: 1px solid black;
+    border-radius: var(--card-border-radius);
 }
 
 .card-image {
@@ -69,7 +74,7 @@ footer {
     justify-content: center;
     align-content: center;
     overflow: clip;
-    border-radius: inherit;
+
 }
 
 .card-title {
@@ -139,7 +144,21 @@ footer {
     overflow: hidden;
 }
 
-/*--------------------*/
+.education-background {
+    position: absolute;
+    margin-left: -50rem;
+    padding: 0;
+
+}
+
+.education-canvas {
+    z-index: -2;
+    background-color: darkblue;
+    width: 1000vw;
+    max-height: 500px;
+}
+
+/*----------------------------------------------------------------------------------------*/
 .experience {
     width: inherit;
     flex-direction: row;
